@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$font1: "Sen",
+sans-serif;
+$font2: "Mali",
+cursive;
+
+$black1: #070413;
+$green1: #08FDD8;
+$pink1: #E95D90;
+$purple1:#5221E6;
+$white1: #E2E2E2;
+
+
+
+:export {
+    black1: $black1;
+    green1: $green1;
+    pink1: $pink1;
+    purple1: $purple1;
+    white1: $white1;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font1;
+    color: $white1;
+    max-width: 1200px;
+    background-color: $black1;
+
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+label {
+    user-select: none;
+}
