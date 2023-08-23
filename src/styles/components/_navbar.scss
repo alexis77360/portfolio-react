@@ -1,0 +1,78 @@
+.sidebar {
+    position: fixed;
+    width: 12rem;
+    height: 100vh;
+    background: $black1;
+    font-size: 0.7rem;
+    font-family: $font2;
+    border-right: 1px solid #5221e627
+}
+
+.nav {
+    position: relative;
+    margin: 25px;
+    text-align: center;
+    top: 15%;
+    transform: translateY(-15%);
+    
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 2px solid $pink1;
+        }
+    }
+
+}
+
+.nav ul {
+
+    li {
+        position: relative;
+        margin: 0.7rem 0;
+
+        a {
+            line-height: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            color: $white1;
+            display: block;
+            transition: all ease-out 300ms;
+        }
+
+        &.active a {
+            color: $green1;
+        }
+
+        &:not(.active)::after {
+            opacity: 0;
+            transition: all ease-out 500ms;
+        }
+
+        &:not(.active):hover a {
+            color: $pink1;
+            transition: all ease-out 300ms;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0.2em;
+            background: $black1;
+            left: 0;
+            bottom: 0;
+            background-image: linear-gradient(to right, $purple1, $pink1);
+            transition: all ease-out 500ms;
+        }
+    }
+}

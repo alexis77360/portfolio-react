@@ -12,8 +12,6 @@ $pink1: #E95D90;
 $purple1:#5221E6;
 $white1: #E2E2E2;
 
-
-
 :export {
     black1: $black1;
     green1: $green1;
@@ -22,6 +20,22 @@ $white1: #E2E2E2;
     white1: $white1;
 
 }
+//! Scrollbar
+/*width*/
+::-webkit-scrollbar {
+width:auto;
+}
+/*track*/
+::-webkit-scrollbar-track {
+background:rgb(7, 4, 19);
+}
+/*thumb*/
+::-webkit-scrollbar-thumb {
+background:rgb(82, 33, 230);
+border-radius:50px;
+box-shadow:rgb(0, 0, 0) 2px -2px;
+}
+
 
 * {
     margin: 0;
@@ -52,4 +66,8 @@ a:visited {
 
 label {
     user-select: none;
+}
+main{
+    margin-left: 25%;
+    text-align: center;
 }
