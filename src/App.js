@@ -1,10 +1,35 @@
 import Navbar from "./components/Navbar";
-import Mouse from "./components/Mouse";
+import { useState, useEffect } from "react";
+
 
 function App() {
 
+  //génerer un div qui suit le déplacement de la souris
+  const [mousePosition, setMousePosition] = useState({ x: null, y: null });
+
+  useEffect(() => {
+    document.addEventListener("mousemove", (e) => {
+      setMousePosition({ x: e.pageX, y: e.pageY });
+    });
+  }, []);
+
   return (
     <div className="App">
+      <div
+        className="cursor"
+        style={{
+          left: `${
+            mousePosition.x > window.innerWidth - 40
+              ? window.innerWidth - 40
+              : mousePosition.x
+          }px`,
+          top: `${
+          mousePosition.y
+          }px`,
+        }}
+      >
+      </div>
+
 
       <Navbar />
 
@@ -63,9 +88,12 @@ function App() {
         Contact
         
         
+        
         </h1></section>
 
     </main>
+    
+
     </div>
   );
 }

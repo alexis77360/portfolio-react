@@ -20,20 +20,23 @@ $white1: #E2E2E2;
     white1: $white1;
 
 }
+
 //! Scrollbar
 /*width*/
 ::-webkit-scrollbar {
-width:auto;
+    width: auto;
 }
+
 /*track*/
 ::-webkit-scrollbar-track {
-background:rgb(7, 4, 19);
+    background: rgb(7, 4, 19);
 }
+
 /*thumb*/
 ::-webkit-scrollbar-thumb {
-background:rgb(82, 33, 230);
-border-radius:50px;
-box-shadow:rgb(0, 0, 0) 2px -2px;
+    background: rgb(82, 33, 230);
+    border-radius: 50px;
+    box-shadow: rgb(0, 0, 0) 2px -2px;
 }
 
 
@@ -41,6 +44,8 @@ box-shadow:rgb(0, 0, 0) 2px -2px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
+
 }
 
 html {
@@ -50,7 +55,6 @@ html {
 body {
     font-family: $font1;
     color: $white1;
-    max-width: 1200px;
     background-color: $black1;
 
 }
@@ -67,7 +71,26 @@ a:visited {
 label {
     user-select: none;
 }
-main{
-    margin-left: 25%;
+
+main {
+    margin-left: 13rem;
+    margin-right: 3rem;
     text-align: center;
+
+}
+
+.cursor {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 100000;
+    width: 24px;
+    height: 24px;
+    mix-blend-mode: difference;
+    background-color: transparent;
+    box-shadow: 
+    0 0 10px $green1,
+    0 0 40px $green1,
+    0 0 80px $purple1;
 }
