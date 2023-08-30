@@ -76,9 +76,17 @@
             display: block;
             transition: all ease-out 300ms;
         }
+        a:hover{
+            transform: scale(1.1);
+            color: $pink1;
+            transition: all ease-out 300ms;
+
+        }
+      
 
         &.active a {
             color: $green1;
+            
         }
 
         &:not(.active)::after {

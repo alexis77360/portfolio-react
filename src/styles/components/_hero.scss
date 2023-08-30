@@ -41,17 +41,32 @@
 .hero-img {
     img {
         width: 25rem;
+        animation: slideIn 1.2s ease-in-out ;
+
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
 .hero-content {
+    span {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
     h2 {
         font-size: 3rem;
+        line-height: 1.5;
+       
 
-        span {
-            color: $green1;
-            font-size: 1rem;
-        }
     }
 }
 

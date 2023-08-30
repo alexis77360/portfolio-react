@@ -10,7 +10,7 @@ const Hero = () => {
                 </div>
                 <div className="hero-content">
                     <h2>
-                        Bonjour je suis Alexis
+                        Bonjour, je suis Alexis
                     </h2>
                     <span>j'aime traduire les problèmes et les idées complexes en expériences numériques agréables et mémorables.</span>
                 </div>
