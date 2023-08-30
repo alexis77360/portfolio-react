@@ -57,6 +57,11 @@ body {
     background-color: $black1;
 
 }
+main{
+    margin-left: 13rem;
+    margin-right: 3rem;
+}
+
 
 li {
     list-style: none;
@@ -71,9 +76,6 @@ label {
     user-select: none;
 }
 
-main {
-    margin-left: 12rem;
-}
 
 /* .cursor {
     position: absolute;
