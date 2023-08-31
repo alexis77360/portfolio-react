@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import magicMouse from "magicmouse.js";
 import About from "./components/About";
+import Work from "./components/Work";
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Work />
     </main>
     </div>
   );

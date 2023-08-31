@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
 
                 <ul>
-                    <li className={activeLink === 1 ? 'active ' : ''}><a href="#home" onClick={() => handleLinkClick(1)}>Accueil</a></li>
+                    <li className={activeLink === 1 ? 'active' : ''}><a href="#home" onClick={() => handleLinkClick(1)}>Accueil</a></li>
                     <li className={activeLink === 2 ? 'active' : ''}><a href="#about-me" onClick={() => handleLinkClick(2)}>Mon histoire</a></li>
                     <li className={activeLink === 3 ? 'active' : ''}><a href="#realisation" onClick={() => handleLinkClick(3)}>Réalisation</a></li>
                     <li className={activeLink === 4 ? 'active' : ''}><a href="#mini-projets" onClick={() => handleLinkClick(4)}>Mini-projets</a></li>

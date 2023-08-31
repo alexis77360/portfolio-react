@@ -4,7 +4,7 @@ const About = () => {
     return (
         <section id="about-me">
         <div className="about-me-content">
-          <h2>Mon Histoire</h2>
+          <h3>Mon Histoire</h3>
               <p>
               Mon parcours atypique a débuté dans le domaine de l'hôtellerie, où j'ai travaillé en tant que chef barman. Fort de dix années d'expérience dans le secteur de la restauration, j'ai eu l'opportunité de façonner de jeunes talents en tant que formateur.
               </p>
