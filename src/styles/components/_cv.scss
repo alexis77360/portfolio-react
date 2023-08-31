@@ -1,0 +1,47 @@
+#cv {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+
+    .cv_wrapper {
+       
+
+
+        input[type="radio"] {
+            display: none;
+
+        }
+        
+        .active {
+        background-color: $purple1;
+
+        }
+
+        .tabs {
+            display: flex;
+            display: flex;
+            justify-content: space-around;
+            
+
+            .tab {
+                width: 33%;
+                padding: 0.5rem 1rem;
+                text-align: center;
+                color: $green1;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .cv_text{
+            margin-top: 2rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            color: $green1;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            text-align: justify;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        }
+    }
+
+}

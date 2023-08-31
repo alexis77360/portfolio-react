@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import magicMouse from "magicmouse.js";
 import About from "./components/About";
 import Work from "./components/Work";
+import Cv from "./components/Cv";
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
         <Hero />
         <About />
         <Work />
+        <Cv />
     </main>
     </div>
   );
