@@ -5,10 +5,21 @@ import Card from './Card';
 const Work = () => {
     return (
         <section id="realisation">
-            <div className="realisation-content">
+          
                 <h3>Projets</h3>
-                <Card projects={projects} key={projects.title}/>
-            </div>
+
+                <div className="portofolio-grid">
+                    {
+                        projects.map((project) => (
+                            <Card projects={project} key={project.title}/>
+                        ))
+
+                    }
+                </div>
+
+                 
+              
+
         </section>
     );
 };

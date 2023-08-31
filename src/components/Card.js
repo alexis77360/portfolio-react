@@ -1,36 +1,22 @@
 import React from 'react';
-import bf from'../asset/img/bf-peinture.png';
 
 const Card = ({ projects }) => {
     return (
-        <div className="portofolio-grid">
-            <div class="portfolio-card">
-            <div class="overlay"></div>
-                <img src={bf} alt="project" />
-                <h4>Titre du Projet</h4>
-                <p>Description courte du projet.</p>
+       
+            <div className="portfolio-card">
+            <div className="overlay"></div>
+                <img loading='lazy' src={projects.img} alt={projects.title} />
+                <h4>{projects.title}</h4>
+                <p>{projects.desc}</p>
+                
+               
             </div>
-            <div class="portfolio-card">
-            <div class="overlay"></div>
-                <img src={bf} alt="project" />
-                <h4>Titre du Projet</h4>
-                <p>Description courte du projet.</p>
-            </div>
-            <div class="portfolio-card">
-            <div class="overlay"></div>
-                <img src={bf} alt="project" />
-                <h4>Titre du Projet</h4>
-                <p>Description courte du projet.</p>
-            </div>
-            <div class="portfolio-card">
-            <div class="overlay"></div>
-                <img src={bf} alt="project" />
-                <h4>Titre du Projet</h4>
-                <p>Description courte du projet.</p>
-            </div>
-        </div>
 
-          
+                    
+
+           
+        
+
     );
 };
 
