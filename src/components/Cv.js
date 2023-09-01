@@ -98,7 +98,7 @@ const Cv = () => {
             name="tabs"
             value="Diplomes"
             checked={activeTab === 'Diplomes'}
-            onClick={handleTabChange}
+            onChange={handleTabChange}
           />
           <label
             className={`tab ${activeTab === 'Diplomes' ? 'active-tab' : ''}`}
@@ -112,7 +112,7 @@ const Cv = () => {
             name="tabs"
             value="Experiences"
             checked={activeTab === 'Experiences'}
-            onClick={handleTabChange}
+            onChange={handleTabChange}
           />
           <label
             className={`tab ${activeTab === 'Experiences' ? 'active-tab' : ''}`}
@@ -126,7 +126,7 @@ const Cv = () => {
             name="tabs"
             value="Langages"
             checked={activeTab === 'Langages'}
-            onClick={handleTabChange}
+            onChange={handleTabChange}
           />
           <label
             className={`tab ${activeTab === 'Langages' ? 'active-tab' : ''}`}
