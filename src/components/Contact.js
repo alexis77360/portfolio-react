@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import logo from '../asset/img/logo.png';
 
 const Contact = () => {
 const form = useRef();
@@ -41,20 +42,35 @@ const sendEmail = (e) => {
   };
 
   return (
-    <div className="form-container">
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Nom</label>
-      <input type="text" name="name" required autoComplete='off' />
-      <label>Email</label>
-      <input type="email" name="email" required autoComplete='off'/>
-      <label>Message</label>
-      <textarea name="message" required autoComplete='off'/>
-      <input type="submit" value="Envoyer" />
-    </form>
-    <div className="form-message">
+        <section id="contact">
+            <h3>Contact</h3>
+            <div className="contact-info">
+              
+              
+                <div className="contact-text">
+                    <p>
+                    Maintenant il est temps de vous montrer ce que je sais faire !
+                    <br/>
+                    <br/>
+                    Contactez-moi si vous êtes intéressé(e) pour toute collaboration ou si vous avez la moindre question 🙂
+                    </p>
+                </div>
 
-    </div>
-    </div>
+
+                <div className="form-container">
+                    <form ref={form} onSubmit={sendEmail}>
+                    <input type="text" name="name" required autoComplete='off' placeholder='Nom' />
+                    <input type="email" name="email" required autoComplete='off' placeholder='Email'/>
+                    <textarea name="message" required autoComplete='off' placeholder='Message'/>
+                    <input type="submit" value="Envoyer" />
+                    </form>
+                    <div className="form-message">
+                    </div>
+                </div>
+
+                
+            </div>
+    </section>
   );
 };
 

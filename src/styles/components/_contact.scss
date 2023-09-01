@@ -1,0 +1,104 @@
+.form-container {
+    display: flex;
+    width: 50%;
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex: 2;
+
+
+        input {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #5221e6c0;
+            background-color: $black2;
+            width: 100%;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input::placeholder,
+        textarea {
+
+            font-size: 1rem;
+            font-family: $font2;
+            text-align: center;
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid $green1;
+            box-shadow: $green1 0px 0px 10px 0px;
+
+        }
+
+        input[type=submit] {
+            background-color: $purple1;
+            color: $green1;
+            cursor: pointer;
+            font-size: 1rem;
+            font-family: $font2;
+            font-weight: bold;
+            width: 50%;
+        }
+
+        input[type=submit]:hover {
+            box-shadow: $green1 0px 0px 10px 0px;
+            border: $green1 1px solid;
+        }
+
+        textarea {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #5221e6c0;
+            height: 100px;
+            background-color: $black2;
+            width: 100%;
+
+
+        }
+
+        textarea:focus {
+            outline: none;
+            border: 1px solid $green1;
+            box-shadow: $green1 0px 0px 10px 0px;
+        }
+
+        .form-message {
+            font-weight: bold;
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .sucess {
+            color: #4CAF50;
+        }
+
+        .error {
+            color: #f44336;
+        }
+    }
+}
+
+.contact-info {
+    display: flex;
+    align-items: start;
+
+
+    .contact-text {
+    flex: 1;
+    font-size: 1.3rem;
+    font-family: $font2;
+    line-height: 1.5;
+    text-align: start;
+    padding-right: 1rem;
+
+    }
+}

@@ -38,6 +38,7 @@ font-size: 1rem;
 .portfolio-card:hover {
 transform: translateY(-5px);
 box-shadow: 0 2px 15px $green1;
+border: 1px solid $green1;
 }
 
 
