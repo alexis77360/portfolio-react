@@ -8,13 +8,12 @@
 }
 
 .portfolio-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
     margin-top: 1rem;
-  
-
 }
 
 .portfolio-card img {
