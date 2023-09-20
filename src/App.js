@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import magicMouse from "magicmouse.js";
-import About from "./components/About";
-import Work from "./components/Work";
-import Cv from "./components/Cv";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+
+import Legales from "./pages/Legales";
+import NotFound from "./pages/NotFound";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
 
 
 function App() {
@@ -46,18 +45,15 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Work />
-        <Cv />
-        <Contact />
-        <Footer />
-        
-    </main>
-    </div>
+<div className="App">
+			<Router>
+				<Routes>
+          <Route path="/" element={<Home />} />
+					<Route path="*" element={<NotFound />} />
+					<Route path="/legale" element={<Legales />} />
+				</Routes>
+			</Router>
+		</div>
   );
 }
 

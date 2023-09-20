@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -30,7 +31,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="mention">
-                    <a href="https://google.com" target="_blank" rel="noopener noreferrer">Mentions légales</a>
+                    <Link to="/legale">Mentions Légales</Link>
                 </div>
                 <div className="footer_signature">
                     <p>Alexfav Dev. Tous droits réservés © {date } </p>
