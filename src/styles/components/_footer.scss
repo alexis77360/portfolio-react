@@ -1,27 +1,40 @@
 footer {
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
     font-size: 1.4rem;
-    color: $green1;
-    border-top: 1px solid #5221e639;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    
 
     a {
-        text-decoration: none;    
+        text-decoration: none;
+        color: $white1;
+
+        &:hover {
+            color: $green1;
+        }
+
         svg {
             margin: 0 0.5rem;
             width: 2.5rem;
             height: 2.5rem;
             fill: $purple1;
+            
+            transition: all 0.3s ease-in-out;
 
             &:hover {
                 fill: $green1;
                 transform: scale(1.1);
-
-
-
-
             }
         }
     }
+
+    .mention {
+        font-size: 1rem;
+        margin-top: 1rem;
+}
+    .footer_signature{
+       
+        font-size: 1rem;
+        margin-top: 0.5rem;
+}
 }

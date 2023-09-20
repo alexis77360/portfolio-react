@@ -13,7 +13,7 @@ const Navbar = () => {
         { id: 'home', index: 1 },
         { id: 'about-me', index: 2 },
         { id: 'realisation', index: 3 },
-        { id: 'mini-projets', index: 4 },
+    /*     { id: 'mini-projets', index: 4 }, */
         { id: 'cv', index: 5 },
         { id: 'contact', index: 6 },
     ];
@@ -71,7 +71,7 @@ const Navbar = () => {
                     <li className={activeLink === 1 ? 'active' : ''}><a href="#home" onClick={() => handleLinkClick(1)}>Accueil</a></li>
                     <li className={activeLink === 2 ? 'active' : ''}><a href="#about-me" onClick={() => handleLinkClick(2)}>Mon histoire</a></li>
                     <li className={activeLink === 3 ? 'active' : ''}><a href="#realisation" onClick={() => handleLinkClick(3)}>Réalisation</a></li>
-                    <li className={activeLink === 4 ? 'active' : ''}><a href="#mini-projets" onClick={() => handleLinkClick(4)}>Mini-projets</a></li>
+                   {/*  <li className={activeLink === 4 ? 'active' : ''}><a href="#mini-projets" onClick={() => handleLinkClick(4)}>Mini-projets</a></li> */}
                     <li className={activeLink === 5 ? 'active' : ''}><a href="#cv" onClick={() => handleLinkClick(5)}>CV</a></li>
                     <li className={activeLink === 6 ? 'active' : ''}><a href="#contact" onClick={() => handleLinkClick(6)}>Contact</a></li>
                 </ul>

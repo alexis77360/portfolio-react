@@ -15,18 +15,21 @@ const Cv = () => {
 
       return (
         <div className='cv_text'>
+          
+          <p>
+            Développeur Web Openclassrooms
+            <br />
+            <span>2022 - 2023 </span>
+        </p>
+
         <p>
             Concepteur Développeur d'Applications
             <br />
-            2018 - Current
+            2021 - 2022
 
         </p>
 
-        <p>
-            Développeur Web Openclassrooms
-            <br />
-            2016 - 2018
-        </p>
+    
 
         <p>
           European Bartender School
@@ -104,7 +107,7 @@ const Cv = () => {
             className={`tab ${activeTab === 'Diplomes' ? 'active-tab' : ''}`}
             htmlFor="radio-1"
           >
-            Diplomes<span className="notification">2</span>
+            Diplomes<span className="notification"></span>
           </label>
           <input
             type="radio"
