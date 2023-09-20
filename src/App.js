@@ -6,6 +6,7 @@ import About from "./components/About";
 import Work from "./components/Work";
 import Cv from "./components/Cv";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
 
 
    useEffect(() => {
-    magicMouse(); // Initialise MagicMouse.js ici
+    magicMouse(); //! Initialise MagicMouse.js ici
   }, []); 
   
 
@@ -53,6 +54,7 @@ function App() {
         <Work />
         <Cv />
         <Contact />
+        <Footer />
         
     </main>
     </div>

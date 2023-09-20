@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import logo from '../asset/img/logo.png';
 
 const Contact = () => {
 const form = useRef();
@@ -15,7 +14,7 @@ const sendEmail = (e) => {
          process.env.REACT_APP_EMAILJS_SERVICE_ID,
          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
          form.current,
-         //!on peut utiliser les variables d'environnement dans le fichier .env pour cacher les informations sensibles
+     
          process.env.REACT_APP_EMAILJS_USER_ID
          )
          
