@@ -6,7 +6,7 @@ const Work = () => {
     return (
         <section id="realisation">
           
-                <h3>Projets</h3>
+                <h3>Mes Projets</h3>
 
                 <div className="portofolio-grid">
                     {
