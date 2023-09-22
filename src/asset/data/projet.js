@@ -34,7 +34,7 @@ export const projects = [
     },
     {
         title: "Kasa",
-        desc: "Création d'une application de réservation de logement en ligne. Intégration de la maquette responsive en React.",
+        desc: "Création d'une application de réservation de logement en ligne. Intégration de la maquette responsive avec React.",
         img: "https://fastly.picsum.photos/id/567/200/300.jpg?hmac=ntGyo7HM-vKGZw14bMSyWRWvUmbWZgtDpkOI_RwUT6A",
         link: "https://www.bf-peinture.fr/",
     },
