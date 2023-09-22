@@ -5,6 +5,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 1068px) {
+        display: block;
+        text-align: center;
+        padding: 0 1.5rem;
+        display: flex;
+
+
+    }
+
+
 }
 
 .hero::before {
@@ -20,13 +31,24 @@
     background: linear-gradient(90deg, $purple1 0%, $pink1 100%);
     display: block;
     z-index: -1;
-    animation: rotateColor 2.5s  infinite ease-in-out;
+    animation: rotateColor 2.5s infinite ease-in-out;
+
+    @media screen and (max-width: 1068px) {
+
+
+        display: none;
+
+
+
+    }
 }
+
 
 @keyframes rotateColor {
     0% {
         transform: translate3d(0, 0, 0) rotateZ(360deg);
     }
+
     100% {
         transform: translate3d(0, 0, 0) rotateZ(0deg);
     }
@@ -36,12 +58,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 1068px) {
+        display: block;
+        text-align: center;
+        padding: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+
+    }
 }
 
 .hero-img {
     img {
-        width: 25rem;
-        animation: slideIn 1.2s ease-in-out ;
+        width: 100%;
+        animation: slideIn 1.2s ease-in-out;
+
+        @media screen and (max-width: 1068px) {
+            width: 400px;
+            height: 400px;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            object-fit: contain;
+            background: linear-gradient(90deg, $purple1 0%, $pink1 100%);
+
+
+        }
 
     }
 }
@@ -51,6 +95,7 @@
         transform: translateX(-100%);
         opacity: 0.5;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -61,12 +106,32 @@
     span {
         font-size: 1.2rem;
         line-height: 1.5;
+
+        @media screen and (max-width: 1068px) {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
     }
+
     h2 {
         font-size: 3rem;
         line-height: 1.5;
-       
+
+        @media screen and (max-width: 1068px) {
+            font-size: 2rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.5rem;
+        
+            
+        }
+
 
     }
 }
-

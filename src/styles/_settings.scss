@@ -32,7 +32,7 @@ $white1: #E2E2E2;
 /*track*/
 ::-webkit-scrollbar-track {
     background: rgb(7, 4, 19);
-    
+
 }
 
 /*thumb*/
@@ -40,7 +40,7 @@ $white1: #E2E2E2;
     background: rgb(82, 33, 230);
     border-radius: 50px;
     box-shadow: rgb(0, 0, 0) 2px -2px;
-    
+
 }
 
 
@@ -61,12 +61,23 @@ body {
     background-color: $black1;
 
 }
-main{
+
+main {
     margin-left: 13rem;
     margin-right: 3rem;
+
+    @media screen and (max-width: 1068px) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+
+    }
 }
+
 section {
-    padding:0 3rem;
+    padding: 0 1.5rem;
+
+  
 }
 
 li {
@@ -89,17 +100,18 @@ h3 {
     color: $green1;
     text-align: center;
     font-family: $font2;
-  }
+}
 
- #magicMouseCursor{
+#magicMouseCursor {
     mix-blend-mode: difference;
     background-color: transparent;
-    box-shadow: 
-    0 0 10px $green1,
-    0 0 40px $green1,
-    0 0 80px $purple1;
- }
- #magicPointer{
+    box-shadow:
+        0 0 10px $green1,
+        0 0 40px $green1,
+        0 0 80px $purple1;
+}
+
+#magicPointer {
     mix-blend-mode: difference;
- 
- }
+
+}

@@ -11,7 +11,7 @@ export const projects = [
         title: "Qionis",
         desc: "Audit UX/UI et refonte intégrale du site web de Qionis. Mise en place d'outil de tracking et d'analyse.",
         img: "https://d33wubrfki0l68.cloudfront.net/246193b54deeafe31af1570215bb45a6e929ddfb/afb65/images/qionis-cover-p-1080.png",
-        link: "https://www.bf-peinture.fr/",
+        link: "https://www.qionis.fr/",
 
     },
     {

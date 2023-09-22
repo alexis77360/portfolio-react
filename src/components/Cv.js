@@ -25,7 +25,10 @@ const Cv = () => {
         <p>
             Concepteur Développeur d'Applications
             <br />
-            2021 - 2022
+            <span>
+                  2021 - 2022
+            </span>
+              
 
         </p>
 
@@ -34,7 +37,7 @@ const Cv = () => {
         <p>
           European Bartender School
           <br />
-          2014 - 2016
+          <span>2013 - 2014</span>
         </p>
 
 
@@ -46,19 +49,26 @@ const Cv = () => {
           <p>
             Développeur Web Fullstack
             <br />
-            2018 - Current
+            <span>
+              2018 - 2021
+            </span>
             </p>
 
             <p>
             Webflow Développeuur
             <br />
+            <span>
             2016 - 2018
+            </span>
+              
             </p>
 
             <p>
             Développeur Web Junior
             <br />
-            2014 - 2016
+            <span>
+            2015 - 2016
+            </span>
             </p>
 
 

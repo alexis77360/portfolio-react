@@ -3,7 +3,6 @@ import avatar from "../asset/img/avatar.png"
 const Hero = () => {
     return (
         <section className="hero" id="home">
-            <div className="test"></div>
             <div className="container">
                 <div className="hero-img">
                     <img src={avatar} alt="profile"/>

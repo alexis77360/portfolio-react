@@ -11,7 +11,7 @@ const Notfound = () => {
         <div className='not-found-page'>
 
 <div className="video-background">
-      <video  autoPlay muted loop >
+      <video loading='lazy' autoPlay muted loop >
         {/* Remplacez "video-background.mp4" par le chemin de votre vidéo */}
         <source src={video} type="video/mp4"  />
         Your browser does not support the video tag.
