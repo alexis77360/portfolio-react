@@ -25,7 +25,15 @@ const Navbar_mobile = () => {
     //?Au clic sur le menu burger, afficher le menu mobile
     const handleMenuClick = () => {
         const nav = document.querySelector('.nav-m');
+        const bar1 = document.querySelector('.bar1');
+        const bar2 = document.querySelector('.bar2');
+        const bar3 = document.querySelector('.bar3');
+
         nav.classList.toggle('active');
+        bar1.classList.toggle('active');
+        bar2.classList.toggle('active');
+        bar3.classList.toggle('active');
+
     };
     return(<>
         
@@ -36,7 +44,11 @@ const Navbar_mobile = () => {
         </div>
 
             <nav className="nav-m">
+       
             <div className="logo-m">
+
+             
+
                     <img src={logo} alt="profile" className="profile-img"/>
 
                     
@@ -58,8 +70,8 @@ const Navbar_mobile = () => {
                     </h2>
                 </div>
 
-                <ul>
-                    <li className={activeLink === 1 ? 'active' : ''}><a href="#home" onClick={() => handleLinkClick(1)}>Accueil</a></li>
+                <ul onClick={handleMenuClick}>
+                    <li className={activeLink === 1 ? 'active' : ''}><a href="#home" onClick={() => handleLinkClick(1) } >Accueil</a></li>
                     <li className={activeLink === 2 ? 'active' : ''}><a href="#about-me" onClick={() => handleLinkClick(2)}>Mon histoire</a></li>
                     <li className={activeLink === 3 ? 'active' : ''}><a href="#realisation" onClick={() => handleLinkClick(3)}>Réalisation</a></li>
                    {/*  <li className={activeLink === 4 ? 'active' : ''}><a href="#mini-projets" onClick={() => handleLinkClick(4)}>Mini-projets</a></li> */}
